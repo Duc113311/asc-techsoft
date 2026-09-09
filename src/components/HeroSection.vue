@@ -13,10 +13,7 @@ defineProps({
     <div class="container hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">{{ brand.tagline }}</span>
-        <h1>
-          <span class="brand-line">{{ brand.name }}</span>
-          <span>{{ hero.headline }}</span>
-        </h1>
+        <h1>{{ hero.headline }}</h1>
         <p>{{ hero.description }}</p>
         <div class="hero-actions">
           <AppLink class="btn btn-primary" :to="hero.primaryCtaTarget">{{ hero.primaryCta }}</AppLink>

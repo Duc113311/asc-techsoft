@@ -70,9 +70,6 @@ function isActive(item) {
             <option v-for="option in languageOptions" :key="option.value" :value="option.value">{{ option.label }}</option>
           </select>
         </label>
-        <AppLink class="btn btn-primary header-cta" to="/contact">
-          {{ currentLocale.ui.consultation }} <span>&rarr;</span>
-        </AppLink>
       </div>
       <button
         class="mobile-menu-button"
@@ -97,7 +94,6 @@ function isActive(item) {
         >
           {{ item.label }}
         </AppLink>
-        <AppLink class="btn btn-primary mobile-nav-cta" to="/contact" @click="isMenuOpen = false">{{ currentLocale.ui.consultation }} <span>&rarr;</span></AppLink>
         <label class="language-switcher language-switcher-mobile">
           <span class="sr-only">{{ currentLocale.ui.selectLanguage }}</span>
           <select :value="locale" :aria-label="currentLocale.ui.selectLanguage" @change="changeLanguage($event.target.value)">

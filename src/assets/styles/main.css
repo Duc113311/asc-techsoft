@@ -115,7 +115,7 @@ img {
 }
 
 .brand-logo {
-  width: 190px;
+  width: 100px;
   height: auto;
 }
 
@@ -579,7 +579,7 @@ img {
 }
 
 .service-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .product-grid {
@@ -1980,7 +1980,7 @@ img {
   }
 
   .brand-logo {
-    width: 156px;
+    width: 64px;
   }
 
   .hero-copy {
