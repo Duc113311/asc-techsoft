@@ -4,13 +4,12 @@ export default {
   site: {
     brand: {
       tagline: 'Công nghệ - Sáng tạo - Tăng trưởng',
-      description: 'Chúng tôi phát triển sản phẩm phần mềm, cung cấp giải pháp công nghệ và dịch vụ digital marketing giúp doanh nghiệp tăng trưởng bền vững.',
+      description: 'Chúng tôi phát triển sản phẩm phần mềm, cung cấp giải pháp công nghệ và dịch vụ digital marketing dành cho doanh nghiệp sản xuất, nhỏ lẻ, hộ kinh doanh,...',
     },
     navigation: [
       { label: 'Trang chủ' },
       { label: 'Sản phẩm' },
       { label: 'Giới thiệu' },
-      { label: 'Blog' },
       { label: 'Liên hệ' },
     ],
     hero: {
@@ -61,13 +60,13 @@ export default {
     ],
     aboutPage: {
       eyebrow: 'Về AscTechSoft',
-      title: 'Công nghệ tạo giá trị,\nđổi mới thúc đẩy tăng trưởng.',
-      description: 'AscTechSoft là công ty công nghệ tập trung xây dựng sản phẩm phần mềm, cung cấp giải pháp công nghệ và dịch vụ digital marketing cho cá nhân và doanh nghiệp.',
-      heroCta: 'Khám phá điều chúng tôi làm',
+      title: 'Xây sản phẩm số.\nGiải quyết bài toán thật.\nTạo ra tăng trưởng.',
+      description: 'AscTechSoft xây dựng sản phẩm phần mềm, cung cấp giải pháp công nghệ và dịch vụ digital marketing, tập trung vào hiệu quả thực tế và giá trị tăng trưởng lâu dài cho doanh nghiệp.',
+      heroCta: 'Khám phá giải pháp',
       missionEyebrow: 'Chúng tôi là ai',
-      missionTitle: 'Giải pháp toàn diện cho tương lai số bền vững',
-      missionDescription: 'Với đội ngũ giàu kinh nghiệm và tư duy sản phẩm thực tiễn, chúng tôi giúp doanh nghiệp xây dựng trải nghiệm số tốt hơn và tăng trưởng tự tin.',
-      missionPoints: ['Chiến lược sản phẩm và triển khai thực tế', 'Công nghệ hiện đại cho nhu cầu kinh doanh', 'Đồng hành lâu dài từ ra mắt đến tăng trưởng'],
+      missionTitle: 'Công nghệ phù hợp\ncho từng bài toán\nkinh doanh',
+      missionDescription: 'Từ ý tưởng đến triển khai, AscTechSoft đồng hành cùng doanh nghiệp xây dựng sản phẩm số, tối ưu vận hành và phát triển trên các nền tảng digital.',
+      missionPoints: ['Phát triển website, mobile app & hệ thống phần mềm', 'Giải pháp công nghệ theo nhu cầu doanh nghiệp', 'Digital Marketing & hỗ trợ tăng trưởng sản phẩm'],
       valuesTitle: 'Giá trị cốt lõi',
       valuesDescription: 'Những nguyên tắc định hướng cách chúng tôi xây dựng, hợp tác và tạo ra kết quả.',
       values: [
@@ -127,7 +126,7 @@ export default {
         { title: 'Hỗ trợ', links: [{ label: 'Trung tâm hỗ trợ' }, { label: 'Hướng dẫn sử dụng' }, { label: 'Điều khoản' }, { label: 'Chính sách bảo mật' }] },
       ],
       contactTitle: 'Liên hệ',
-      contact: { address: '123 Đường ABC, Quận 1, TP. Hồ Chí Minh' },
+      contact: { address: 'Khu đô thị Dương Nội 2, Dương Nội, Hà Nội, Vietnam' },
     },
   },
   ui: {

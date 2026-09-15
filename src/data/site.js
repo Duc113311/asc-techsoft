@@ -9,7 +9,6 @@ export const siteData = {
     { label: 'Home', to: '/' },
     { label: 'Products', to: '/products' },
     { label: 'About Us', to: '/about' },
-    { label: 'Blog', to: '/blog' },
     { label: 'Contact', to: '/contact' },
   ],
   hero: {
@@ -142,7 +141,7 @@ export const siteData = {
     eyebrow: 'About AscTechSoft',
     title: 'Technology that creates value,\ninnovation that drives growth.',
     description:
-      'AscTechSoft is a technology company focused on building software products, delivering technology solutions, and providing digital marketing services for individuals and businesses.',
+      'AscTechSoft is a solo-founder technology startup — building software products, delivering technology solutions, and providing digital marketing services for businesses worldwide.',
     heroCta: 'Explore what we do',
     missionEyebrow: 'Who we are',
     missionTitle: 'Complete solutions for a stronger digital future',
@@ -222,8 +221,8 @@ export const siteData = {
       },
     ],
     contact: {
-      phone: '(+84) 123 456 789',
-      phoneRaw: '+84123456789',
+      phone: '0384367193',
+      phoneRaw: '+84384367193',
       email: 'contact@asctechsoft.com',
       address: '123 ABC Street, District 1, Ho Chi Minh City',
     },

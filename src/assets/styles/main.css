@@ -703,9 +703,9 @@ img {
   max-width: 630px;
   margin: 18px 0 16px;
   white-space: pre-line;
-  font-size: clamp(2.7rem, 5vw, 5rem);
-  line-height: 0.98;
-  letter-spacing: -0.06em;
+  font-size: clamp(2rem, 3.8vw, 3.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
 }
 
 .about-hero-copy p {
@@ -1408,6 +1408,7 @@ img {
 
 .contact-detail-item strong {
   font-size: 0.83rem;
+  white-space: nowrap;
 }
 
 .contact-detail-item a,
@@ -1441,16 +1442,10 @@ img {
 
 .contact-map {
   position: relative;
-  min-height: 170px;
+  min-height: 320px;
   overflow: hidden;
   border: 1px solid rgba(46, 91, 255, 0.12);
   border-radius: var(--radius-xl);
-  background-color: #e7f0e6;
-  background-image:
-    linear-gradient(28deg, transparent 46%, rgba(255, 255, 255, 0.9) 47% 52%, transparent 53%),
-    linear-gradient(112deg, transparent 46%, rgba(255, 255, 255, 0.9) 47% 51%, transparent 52%),
-    linear-gradient(0deg, transparent 48%, rgba(183, 207, 188, 0.7) 49% 51%, transparent 52%);
-  background-size: 210px 140px, 260px 150px, 100% 68px;
 }
 
 .map-roads {
@@ -2094,7 +2089,7 @@ img {
   }
 
   .about-hero-copy h1 {
-    font-size: clamp(2.4rem, 10vw, 4rem);
+    font-size: clamp(1.8rem, 8vw, 3rem);
   }
 
   .about-stats-grid {

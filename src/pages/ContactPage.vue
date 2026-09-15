@@ -68,18 +68,19 @@ function submitForm() {
           <div class="contact-detail-item"><strong>{{ currentLocale.ui.email }}</strong><AppLink :to="`mailto:${siteData.footer.contact.email}`">{{ siteData.footer.contact.email }}</AppLink></div>
           <div class="contact-detail-item"><strong>{{ currentLocale.ui.address }}</strong><span>{{ siteData.footer.contact.address }}</span></div>
           <div class="contact-detail-item"><strong>{{ currentLocale.ui.workingHours }}</strong><span>{{ currentLocale.ui.workingDays }}<br />08:00 - 17:30</span></div>
-          <div class="contact-socials"><span>f</span><span>◉</span><span>in</span><span>▶</span></div>
         </aside>
       </div>
     </section>
 
     <section class="contact-map-section">
       <div class="container">
-        <div class="contact-map" role="img" :aria-label="currentLocale.ui.mapLabel">
-          <div class="map-roads map-road-one"></div>
-          <div class="map-roads map-road-two"></div>
-          <div class="map-roads map-road-three"></div>
-          <div class="map-pin"><strong>AscTechSoft</strong><span>{{ siteData.footer.contact.address }}</span></div>
+        <div class="contact-map">
+          <iframe
+            src="https://maps.google.com/maps?q=20.9629797,105.7461722&hl=vi&z=17&output=embed"
+            style="width:100%;height:100%;border:0;"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>
