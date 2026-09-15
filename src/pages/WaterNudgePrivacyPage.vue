@@ -1,160 +1,275 @@
 <template>
-  <div class="pp-wrap">
-    <div class="pp-container">
-      <h1>Privacy Policy – Water Nudge</h1>
-      <p class="pp-updated">Last updated: September 15, 2026</p>
+  <div class="pp-page">
+    <div class="pp-hero">
+      <div class="pp-container">
+        <span class="pp-eyebrow">Legal</span>
+        <h1>Privacy Policy<br /><span>Water Nudge</span></h1>
+        <p class="pp-updated">Last updated: September 15, 2026</p>
+      </div>
+    </div>
 
-      <p>We built the app as an Ad Supported app and In-App Purchase app. This SERVICE is provided at no cost and is intended for use as is.</p>
-      <p>This page informs visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service. If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
+    <div class="pp-body">
+      <div class="pp-container pp-content">
 
-      <h2>Information Collection and Use</h2>
-      <p>For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained on your device and is not collected by us in any way.</p>
-      <p>The app does use third-party services that may collect information used to identify you.</p>
-      <p><strong>Third-party service providers:</strong></p>
-      <ul>
-        <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
-        <li><strong>Firebase Analytics:</strong> <a href="https://firebase.google.com/policies/analytics/" target="_blank" rel="noopener">https://firebase.google.com/policies/analytics/</a></li>
-        <li><strong>Google Cloud Messaging (GCM):</strong> <a href="https://developers.google.com" target="_blank" rel="noopener">https://developers.google.com</a></li>
-        <li><strong>FMOD Ex Programmers API:</strong> <a href="https://www.fmod.com/" target="_blank" rel="noopener">https://www.fmod.com/</a></li>
-      </ul>
-      <p><strong>Ads in apps:</strong></p>
-      <ul>
-        <li><strong>AdMob:</strong> <a href="https://support.google.com/admob/answer/6128543?hl=en#" target="_blank" rel="noopener">https://support.google.com/admob/answer/6128543</a></li>
-        <li><strong>Unity:</strong> <a href="https://unity3d.com/legal/privacy-policy" target="_blank" rel="noopener">https://unity3d.com/legal/privacy-policy</a></li>
-        <li><strong>IronSource:</strong> <a href="http://www.ironsrc.com/wp-content/uploads/2019/03/ironSource-Privacy-Policy.pdf" target="_blank" rel="noopener">ironSource Privacy Policy</a></li>
-        <li><strong>InMobi:</strong> <a href="https://www.inmobi.com" target="_blank" rel="noopener">https://www.inmobi.com</a></li>
-        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">https://www.facebook.com/about/privacy</a></li>
-        <li><strong>Adcolony:</strong> <a href="https://unity3d.com/" target="_blank" rel="noopener">https://unity3d.com/</a></li>
-        <li><strong>Applovin:</strong> <a href="https://www.applovin.com/" target="_blank" rel="noopener">https://www.applovin.com/</a></li>
-      </ul>
+        <p>Water Nudge ("we", "our", or "the app") is a hydration tracking application. This Privacy Policy explains how information is accessed, collected, used, and handled when you use Water Nudge.</p>
+        <p>By using the app, you acknowledge the practices described in this Privacy Policy.</p>
 
-      <h2>Service Providers</h2>
-      <p>We may employ third-party companies and individuals for the following reasons:</p>
-      <ul>
-        <li>To facilitate our Service</li>
-        <li>To provide the Service on our behalf</li>
-        <li>To perform Service-related services or to assist us in analyzing how our Service is used</li>
-      </ul>
-      <p>We want to inform users that these third parties have access to your Personal Information to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
+        <h2>Information We Collect and Use</h2>
+        <p>Water Nudge is designed to keep your personal hydration information locally on your device.</p>
+        <div class="pp-card">
+          <h3>Data stored locally on your device</h3>
+          <ul>
+            <li>Profile information such as gender, age, weight, and height</li>
+            <li>Wake-up and bedtime settings</li>
+            <li>Daily hydration goal</li>
+            <li>Preferred measurement units</li>
+            <li>Drink and hydration records</li>
+            <li>Daily hydration summaries</li>
+            <li>Reminder schedules</li>
+            <li>Application preferences, including theme and language</li>
+          </ul>
+        </div>
+        <p>This information is used to provide hydration tracking, reminders, and personalization. Water Nudge does not transmit this locally stored data to our servers.</p>
 
-      <h2>Security</h2>
-      <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
-      <p>The application may request access to contacts, photos, and files to support the app's features and will not serve any other purposes.</p>
+        <h2>Third-Party Services</h2>
+        <p>Water Nudge uses third-party services that may automatically collect certain device, application, diagnostic, or usage information:</p>
+        <div class="pp-card">
+          <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a></li>
+            <li><a href="https://firebase.google.com/policies/analytics/" target="_blank" rel="noopener">Firebase Analytics</a></li>
+            <li>Firebase Crashlytics</li>
+            <li>Firebase Cloud Messaging</li>
+            <li>Firebase Remote Config</li>
+          </ul>
+          <h3>These services may process information such as:</h3>
+          <ul>
+            <li>Device identifiers</li>
+            <li>Device model and operating system information</li>
+            <li>Application version and configuration</li>
+            <li>App interaction and usage events</li>
+            <li>Crash and diagnostic information</li>
+            <li>IP address</li>
+          </ul>
+        </div>
 
-      <h2>Links to Other Sites</h2>
-      <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+        <h2>Health Connect (Android)</h2>
+        <p>Water Nudge provides an optional integration with Health Connect by Android. This integration is disabled by default and becomes active only when you enable "Health Connect" in the app settings and explicitly grant the requested permission.</p>
+        <div class="pp-grid">
+          <div class="pp-point">
+            <span class="pp-dot"></span>
+            <div><strong>Data written</strong><p>When enabled, Water Nudge writes hydration volume and date/time of drinks you record in the app to Health Connect.</p></div>
+          </div>
+          <div class="pp-point">
+            <span class="pp-dot"></span>
+            <div><strong>How data is used</strong><p>Health Connect data is used solely to sync hydration records you create in Water Nudge. Processing occurs on your device. We do not upload Health Connect data to our servers or any third parties.</p></div>
+          </div>
+          <div class="pp-point">
+            <span class="pp-dot"></span>
+            <div><strong>Your control</strong><p>You can grant, deny, or revoke the Health Connect permission at any time through Android Settings → Health Connect → App permissions → Water Nudge.</p></div>
+          </div>
+        </div>
+        <p>Water Nudge's access to and use of Health Connect data complies with applicable Google Play Health Connect requirements, including its Limited Use requirements.</p>
 
-      <h2>Data We Collect</h2>
-      <p><strong>On-device data (not transmitted to us):</strong> user profile (gender, weight, height, age, wake-up / bedtime, daily water goal, units), drink intake records, daily summaries, reminder schedules, and app preferences (theme, language). Stored locally in the app's SQLite database and SharedPreferences.</p>
-      <p><strong>Data collected by third-party SDKs:</strong> Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config, and Google AdMob may collect device identifiers (Android Advertising ID), device/OS info, crash logs, app usage events, and approximate location (derived from IP) according to their own privacy policies linked above.</p>
+        <h2>Notifications</h2>
+        <p>Water Nudge may send local notifications to provide hydration reminders and daily hydration progress updates. You can disable notification permissions at any time through Android system settings.</p>
 
-      <h2>Health Connect (Android)</h2>
-      <p>Drink Water offers an optional Health Connect integration. This integration is off by default and is activated only when you choose to connect Health Connect from <em>Settings → Sync with fit apps</em> and grant permission. The app requests access only to hydration records; it does not request access to activity, sleep, heart rate, medical records, or other Health Connect data.</p>
-      <ul>
-        <li><strong>Data read:</strong> If you enable "Receive drinks," the app reads the volume and time of hydration records saved in Health Connect by you or other authorized apps.</li>
-        <li><strong>Data written:</strong> If you enable "Send drinks," the app writes the volume and time of drinks you log in Drink Water to Health Connect. When a synchronized drink is edited or deleted, the app may update or delete the corresponding Health Connect record.</li>
-        <li><strong>How data is used and shared:</strong> Health Connect data is used solely to provide the user-requested hydration synchronization feature. Processing occurs on your device. We do not send data obtained from Health Connect to our servers, advertising providers, analytics providers, data brokers, or other third parties.</li>
-        <li><strong>Your control:</strong> You may enable or disable "Receive drinks" and "Send drinks" in the app and may revoke Drink Water's permissions at any time in Health Connect or Android system settings.</li>
-        <li><strong>Retention and deletion:</strong> Hydration records imported into Drink Water are stored locally until you delete them, clear the app's data, or uninstall the app.</li>
-      </ul>
-      <p>Drink Water's use of information received from Health Connect complies with the Health Connect Permissions policy, including its Limited Use requirements.</p>
+        <h2>Permissions</h2>
+        <p>Depending on the features you use and your Android version, Water Nudge may request the following permissions:</p>
+        <ul>
+          <li><strong>Notifications</strong> — to send hydration reminders</li>
+          <li><strong>Health Connect (write hydration)</strong> — only if you enable the Health Connect sync feature</li>
+        </ul>
+        <p>The app requests permissions only when required for the corresponding user-facing functionality.</p>
 
-      <h2>Data Retention</h2>
-      <ul>
-        <li>On-device data: retained on your device for as long as the app is installed. We do not store or back up this data on our servers.</li>
-        <li>Firebase Analytics data: retained up to 14 months, then automatically deleted by Google.</li>
-        <li>Firebase Crashlytics crash reports: retained up to 90 days.</li>
-        <li>Firebase Cloud Messaging tokens: retained while the app is installed; invalidated on uninstall.</li>
-        <li>AdMob data: retained according to Google's AdMob policy.</li>
-      </ul>
+        <h2>Service Providers</h2>
+        <p>We may use third-party companies or services to provide application infrastructure, deliver notifications, analyze application performance, and diagnose crashes. These service providers may process information only as necessary to provide their respective services and are subject to their own privacy policies and legal obligations.</p>
 
-      <h2>How to Delete Your Data</h2>
-      <ul>
-        <li><strong>Delete all on-device data:</strong> Open your device Settings → Apps → Drink Water → Storage → Clear Data, or simply uninstall the app. This permanently removes all profile information, drink records, reminders, and preferences from your device. This action cannot be undone.</li>
-        <li><strong>Reset advertising identifier:</strong> Open device Settings → Google → Ads (Android) and tap "Delete advertising ID" or "Reset advertising ID".</li>
-        <li><strong>Opt out of analytics / ad personalization:</strong> Disable "Personalized ads" in device settings, or revoke consent via the in-app GDPR consent prompt (available in EEA / UK).</li>
-      </ul>
+        <h2>Data Retention</h2>
+        <div class="pp-card">
+          <h3>Data stored by Water Nudge</h3>
+          <p>Hydration records, profile information, preferences, and other locally stored app data remain on your device until you delete the relevant data within the app, clear the app's storage, or uninstall the app.</p>
+          <h3>Third-party data</h3>
+          <p>Information processed by Firebase or Google Play Services is retained according to each provider's applicable retention settings and privacy policies.</p>
+        </div>
 
-      <h2>Changes to This Privacy Policy</h2>
-      <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>
+        <h2>How to Delete Your Data</h2>
+        <ul>
+          <li><strong>Delete Water Nudge data:</strong> Android Settings → Apps → Water Nudge → Storage → Clear storage / Clear data, or uninstall the app. This action cannot be undone.</li>
+          <li><strong>Delete Health Connect data written by Water Nudge:</strong> Android Settings → Health Connect → Data and access → Hydration.</li>
+          <li><strong>Revoke Health Connect permission:</strong> Android Settings → Health Connect → App permissions → Water Nudge.</li>
+        </ul>
 
-      <h2>Contact Us</h2>
-      <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:contact@amobilab.com">contact@amobilab.com</a>.</p>
+        <h2>Security</h2>
+        <p>We take reasonable administrative and technical measures to protect information associated with the use of Water Nudge. However, no electronic storage system or method of data transmission can be guaranteed to be completely secure. Health Connect data is processed only for the hydration sync functionality described in this Privacy Policy.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>Water Nudge is not directed toward children under the minimum age required to independently consent to data processing in their jurisdiction. We do not knowingly collect personal information from children in violation of applicable law. If you believe a child has provided personal information improperly, please contact us so that appropriate action can be taken.</p>
+
+        <h2>Links to Other Websites</h2>
+        <p>Water Nudge may contain links to third-party websites or services. We do not operate these external services and are not responsible for their content or privacy practices. We recommend reviewing the privacy policies of any third-party website or service you visit.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in the app, applicable laws, or third-party services. Any updated version will be posted on this page with a revised Last updated date. Changes become effective when the updated Privacy Policy is published unless otherwise required by applicable law.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have questions, privacy concerns, or requests regarding this Privacy Policy, please contact:<br />
+        <strong>AscTechSoft</strong> — <a href="mailto:contact@asctechsoft.com">contact@asctechsoft.com</a></p>
+
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.pp-wrap {
+.pp-page {
   min-height: 100vh;
-  background: #f8f9fc;
-  padding: 48px 16px 80px;
+  background: #f4f6fb;
   font-family: system-ui, -apple-system, sans-serif;
-  color: #1a1f36;
+}
+
+.pp-hero {
+  background: linear-gradient(135deg, #2e5bff, #1637b9);
+  padding: 64px 24px 48px;
+  color: #fff;
 }
 
 .pp-container {
-  max-width: 780px;
+  max-width: 820px;
   margin: 0 auto;
+}
+
+.pp-eyebrow {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.pp-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 12px;
+  letter-spacing: -0.03em;
+}
+
+.pp-hero h1 span { opacity: 0.75; }
+
+.pp-updated {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.pp-body {
+  padding: 48px 24px 80px;
+}
+
+.pp-content {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+  border-radius: 28px;
+  box-shadow: 0 22px 60px rgba(28,57,152,0.10);
   padding: 48px 52px;
 }
 
-.pp-container h1 {
-  font-size: 1.7rem;
-  font-weight: 800;
-  margin: 0 0 6px;
-  color: #1a1f36;
-}
-
-.pp-updated {
-  color: #8490ad;
-  font-size: 0.85rem;
-  margin: 0 0 32px;
-}
-
-.pp-container h2 {
-  font-size: 1.05rem;
+.pp-content h2 {
+  font-size: 1.4rem;
   font-weight: 700;
-  margin: 32px 0 10px;
-  color: #1a1f36;
+  color: #15203b;
+  margin: 36px 0 12px;
+  padding-left: 14px;
   border-left: 3px solid #2e5bff;
-  padding-left: 12px;
 }
 
-.pp-container p {
+.pp-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #15203b;
+  margin: 16px 0 8px;
+}
+
+.pp-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5f6b8a;
   margin: 0 0 14px;
-  font-size: 0.92rem;
-  line-height: 1.7;
-  color: #3d4a6b;
 }
 
-.pp-container ul {
-  margin: 0 0 16px 20px;
-  padding: 0;
+.pp-content ul {
+  margin: 0 0 16px 0;
+  padding-left: 20px;
 }
 
-.pp-container li {
-  font-size: 0.91rem;
-  line-height: 1.7;
-  color: #3d4a6b;
-  margin-bottom: 6px;
+.pp-content li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5f6b8a;
+  margin-bottom: 8px;
 }
 
-.pp-container a {
+.pp-content strong { color: #15203b; }
+
+.pp-content a {
   color: #2e5bff;
   text-decoration: none;
 }
 
-.pp-container a:hover {
-  text-decoration: underline;
+.pp-content a:hover { text-decoration: underline; }
+
+.pp-card {
+  background: #f4f6fb;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin: 16px 0 24px;
+  border: 1px solid rgba(33,62,160,0.10);
 }
 
-@media (max-width: 600px) {
-  .pp-container {
-    padding: 28px 20px;
-  }
+.pp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0 20px;
+}
+
+.pp-point {
+  display: flex;
+  gap: 12px;
+  background: #f4f6fb;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid rgba(33,62,160,0.08);
+}
+
+.pp-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2e5bff;
+  margin-top: 6px;
+}
+
+.pp-point strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #15203b;
+  margin-bottom: 4px;
+}
+
+.pp-point p {
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .pp-content { padding: 28px 20px; }
+  .pp-grid { grid-template-columns: 1fr; }
 }
 </style>
