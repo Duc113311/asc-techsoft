@@ -5,7 +5,7 @@ import ProductsPage from '../pages/ProductsPage.vue'
 import AboutPage from '../pages/AboutPage.vue'
 import ContactPage from '../pages/ContactPage.vue'
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage.vue'
-import WaterNudgePrivacyPage from '../pages/WaterNudgePrivacyPage.vue'
+import AquaMindPrivacyPage from '../pages/AquaMindPrivacyPage.vue'
 
 const routes = [
   {
@@ -43,7 +43,7 @@ const routes = [
       },
     ],
   },
-  { path: '/privacy/policy-water-nudge', component: WaterNudgePrivacyPage, name: 'water-nudge-privacy' },
+  { path: '/privacy/policy-aquamind', component: AquaMindPrivacyPage, name: 'aquamind-privacy' },
   { path: '/products', redirect: '/en/products' },
   { path: '/about', redirect: '/en/about' },
   { path: '/contact', redirect: '/en/contact' },

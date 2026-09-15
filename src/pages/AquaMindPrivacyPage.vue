@@ -3,7 +3,7 @@
     <div class="pp-hero">
       <div class="pp-container">
         <span class="pp-eyebrow">Legal</span>
-        <h1>Privacy Policy<br /><span>Water Nudge</span></h1>
+        <h1>Privacy Policy<br /><span>AquaMind</span></h1>
         <p class="pp-updated">Last updated: September 15, 2026</p>
       </div>
     </div>
@@ -11,11 +11,11 @@
     <div class="pp-body">
       <div class="pp-container pp-content">
 
-        <p>Water Nudge ("we", "our", or "the app") is a hydration tracking application. This Privacy Policy explains how information is accessed, collected, used, and handled when you use Water Nudge.</p>
+        <p>AquaMind ("we", "our", or "the app") is a hydration tracking application. This Privacy Policy explains how information is accessed, collected, used, and handled when you use AquaMind.</p>
         <p>By using the app, you acknowledge the practices described in this Privacy Policy.</p>
 
         <h2>Information We Collect and Use</h2>
-        <p>Water Nudge is designed to keep your personal hydration information locally on your device.</p>
+        <p>AquaMind is designed to keep your personal hydration information locally on your device.</p>
         <div class="pp-card">
           <h3>Data stored locally on your device</h3>
           <ul>
@@ -29,10 +29,10 @@
             <li>Application preferences, including theme and language</li>
           </ul>
         </div>
-        <p>This information is used to provide hydration tracking, reminders, and personalization. Water Nudge does not transmit this locally stored data to our servers.</p>
+        <p>This information is used to provide hydration tracking, reminders, and personalization. AquaMind does not transmit this locally stored data to our servers.</p>
 
         <h2>Third-Party Services</h2>
-        <p>Water Nudge uses third-party services that may automatically collect certain device, application, diagnostic, or usage information:</p>
+        <p>AquaMind uses third-party services that may automatically collect certain device, application, diagnostic, or usage information:</p>
         <div class="pp-card">
           <ul>
             <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a></li>
@@ -53,28 +53,28 @@
         </div>
 
         <h2>Health Connect (Android)</h2>
-        <p>Water Nudge provides an optional integration with Health Connect by Android. This integration is disabled by default and becomes active only when you enable "Health Connect" in the app settings and explicitly grant the requested permission.</p>
+        <p>AquaMind provides an optional integration with Health Connect by Android. This integration is disabled by default and becomes active only when you enable "Health Connect" in the app settings and explicitly grant the requested permission.</p>
         <div class="pp-grid">
           <div class="pp-point">
             <span class="pp-dot"></span>
-            <div><strong>Data written</strong><p>When enabled, Water Nudge writes hydration volume and date/time of drinks you record in the app to Health Connect.</p></div>
+            <div><strong>Data written</strong><p>When enabled, AquaMind writes hydration volume and date/time of drinks you record in the app to Health Connect.</p></div>
           </div>
           <div class="pp-point">
             <span class="pp-dot"></span>
-            <div><strong>How data is used</strong><p>Health Connect data is used solely to sync hydration records you create in Water Nudge. Processing occurs on your device. We do not upload Health Connect data to our servers or any third parties.</p></div>
+            <div><strong>How data is used</strong><p>Health Connect data is used solely to sync hydration records you create in AquaMind. Processing occurs on your device. We do not upload Health Connect data to our servers or any third parties.</p></div>
           </div>
           <div class="pp-point">
             <span class="pp-dot"></span>
-            <div><strong>Your control</strong><p>You can grant, deny, or revoke the Health Connect permission at any time through Android Settings → Health Connect → App permissions → Water Nudge.</p></div>
+            <div><strong>Your control</strong><p>You can grant, deny, or revoke the Health Connect permission at any time through Android Settings → Health Connect → App permissions → AquaMind.</p></div>
           </div>
         </div>
-        <p>Water Nudge's access to and use of Health Connect data complies with applicable Google Play Health Connect requirements, including its Limited Use requirements.</p>
+        <p>AquaMind's access to and use of Health Connect data complies with applicable Google Play Health Connect requirements, including its Limited Use requirements.</p>
 
         <h2>Notifications</h2>
-        <p>Water Nudge may send local notifications to provide hydration reminders and daily hydration progress updates. You can disable notification permissions at any time through Android system settings.</p>
+        <p>AquaMind may send local notifications to provide hydration reminders and daily hydration progress updates. You can disable notification permissions at any time through Android system settings.</p>
 
         <h2>Permissions</h2>
-        <p>Depending on the features you use and your Android version, Water Nudge may request the following permissions:</p>
+        <p>Depending on the features you use and your Android version, AquaMind may request the following permissions:</p>
         <ul>
           <li><strong>Notifications</strong> — to send hydration reminders</li>
           <li><strong>Health Connect (write hydration)</strong> — only if you enable the Health Connect sync feature</li>
@@ -86,7 +86,7 @@
 
         <h2>Data Retention</h2>
         <div class="pp-card">
-          <h3>Data stored by Water Nudge</h3>
+          <h3>Data stored by AquaMind</h3>
           <p>Hydration records, profile information, preferences, and other locally stored app data remain on your device until you delete the relevant data within the app, clear the app's storage, or uninstall the app.</p>
           <h3>Third-party data</h3>
           <p>Information processed by Firebase or Google Play Services is retained according to each provider's applicable retention settings and privacy policies.</p>
@@ -94,19 +94,19 @@
 
         <h2>How to Delete Your Data</h2>
         <ul>
-          <li><strong>Delete Water Nudge data:</strong> Android Settings → Apps → Water Nudge → Storage → Clear storage / Clear data, or uninstall the app. This action cannot be undone.</li>
-          <li><strong>Delete Health Connect data written by Water Nudge:</strong> Android Settings → Health Connect → Data and access → Hydration.</li>
-          <li><strong>Revoke Health Connect permission:</strong> Android Settings → Health Connect → App permissions → Water Nudge.</li>
+          <li><strong>Delete AquaMind data:</strong> Android Settings → Apps → AquaMind → Storage → Clear storage / Clear data, or uninstall the app. This action cannot be undone.</li>
+          <li><strong>Delete Health Connect data written by AquaMind:</strong> Android Settings → Health Connect → Data and access → Hydration.</li>
+          <li><strong>Revoke Health Connect permission:</strong> Android Settings → Health Connect → App permissions → AquaMind.</li>
         </ul>
 
         <h2>Security</h2>
-        <p>We take reasonable administrative and technical measures to protect information associated with the use of Water Nudge. However, no electronic storage system or method of data transmission can be guaranteed to be completely secure. Health Connect data is processed only for the hydration sync functionality described in this Privacy Policy.</p>
+        <p>We take reasonable administrative and technical measures to protect information associated with the use of AquaMind. However, no electronic storage system or method of data transmission can be guaranteed to be completely secure. Health Connect data is processed only for the hydration sync functionality described in this Privacy Policy.</p>
 
         <h2>Children's Privacy</h2>
-        <p>Water Nudge is not directed toward children under the minimum age required to independently consent to data processing in their jurisdiction. We do not knowingly collect personal information from children in violation of applicable law. If you believe a child has provided personal information improperly, please contact us so that appropriate action can be taken.</p>
+        <p>AquaMind is not directed toward children under the minimum age required to independently consent to data processing in their jurisdiction. We do not knowingly collect personal information from children in violation of applicable law. If you believe a child has provided personal information improperly, please contact us so that appropriate action can be taken.</p>
 
         <h2>Links to Other Websites</h2>
-        <p>Water Nudge may contain links to third-party websites or services. We do not operate these external services and are not responsible for their content or privacy practices. We recommend reviewing the privacy policies of any third-party website or service you visit.</p>
+        <p>AquaMind may contain links to third-party websites or services. We do not operate these external services and are not responsible for their content or privacy practices. We recommend reviewing the privacy policies of any third-party website or service you visit.</p>
 
         <h2>Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time to reflect changes in the app, applicable laws, or third-party services. Any updated version will be posted on this page with a revised Last updated date. Changes become effective when the updated Privacy Policy is published unless otherwise required by applicable law.</p>
@@ -126,18 +126,12 @@
   background: #f4f6fb;
   font-family: system-ui, -apple-system, sans-serif;
 }
-
 .pp-hero {
   background: linear-gradient(135deg, #2e5bff, #1637b9);
   padding: 64px 24px 48px;
   color: #fff;
 }
-
-.pp-container {
-  max-width: 820px;
-  margin: 0 auto;
-}
-
+.pp-container { max-width: 820px; margin: 0 auto; }
 .pp-eyebrow {
   display: inline-block;
   background: rgba(255,255,255,0.15);
@@ -150,7 +144,6 @@
   border-radius: 999px;
   margin-bottom: 16px;
 }
-
 .pp-hero h1 {
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 800;
@@ -158,26 +151,15 @@
   margin: 0 0 12px;
   letter-spacing: -0.03em;
 }
-
 .pp-hero h1 span { opacity: 0.75; }
-
-.pp-updated {
-  color: rgba(255,255,255,0.7);
-  font-size: 0.85rem;
-  margin: 0;
-}
-
-.pp-body {
-  padding: 48px 24px 80px;
-}
-
+.pp-updated { color: rgba(255,255,255,0.7); font-size: 0.85rem; margin: 0; }
+.pp-body { padding: 48px 24px 80px; }
 .pp-content {
   background: #fff;
   border-radius: 28px;
   box-shadow: 0 22px 60px rgba(28,57,152,0.10);
   padding: 48px 52px;
 }
-
 .pp-content h2 {
   font-size: 1.4rem;
   font-weight: 700;
@@ -186,42 +168,13 @@
   padding-left: 14px;
   border-left: 3px solid #2e5bff;
 }
-
-.pp-content h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #15203b;
-  margin: 16px 0 8px;
-}
-
-.pp-content p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #5f6b8a;
-  margin: 0 0 14px;
-}
-
-.pp-content ul {
-  margin: 0 0 16px 0;
-  padding-left: 20px;
-}
-
-.pp-content li {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #5f6b8a;
-  margin-bottom: 8px;
-}
-
+.pp-content h3 { font-size: 1rem; font-weight: 700; color: #15203b; margin: 16px 0 8px; }
+.pp-content p { font-size: 1.2rem; line-height: 1.8; color: #5f6b8a; margin: 0 0 14px; }
+.pp-content ul { margin: 0 0 16px 0; padding-left: 20px; }
+.pp-content li { font-size: 1.2rem; line-height: 1.8; color: #5f6b8a; margin-bottom: 8px; }
 .pp-content strong { color: #15203b; }
-
-.pp-content a {
-  color: #2e5bff;
-  text-decoration: none;
-}
-
+.pp-content a { color: #2e5bff; text-decoration: none; }
 .pp-content a:hover { text-decoration: underline; }
-
 .pp-card {
   background: #f4f6fb;
   border-radius: 16px;
@@ -229,14 +182,7 @@
   margin: 16px 0 24px;
   border: 1px solid rgba(33,62,160,0.10);
 }
-
-.pp-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 16px 0 20px;
-}
-
+.pp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0 20px; }
 .pp-point {
   display: flex;
   gap: 12px;
@@ -245,7 +191,6 @@
   padding: 16px;
   border: 1px solid rgba(33,62,160,0.08);
 }
-
 .pp-dot {
   flex-shrink: 0;
   width: 8px;
@@ -254,20 +199,8 @@
   background: #2e5bff;
   margin-top: 6px;
 }
-
-.pp-point strong {
-  display: block;
-  font-size: 1.1rem;
-  color: #15203b;
-  margin-bottom: 4px;
-}
-
-.pp-point p {
-  font-size: 1.1rem;
-  margin: 0;
-  line-height: 1.6;
-}
-
+.pp-point strong { display: block; font-size: 1.1rem; color: #15203b; margin-bottom: 4px; }
+.pp-point p { font-size: 1.1rem; margin: 0; line-height: 1.6; }
 @media (max-width: 640px) {
   .pp-content { padding: 28px 20px; }
   .pp-grid { grid-template-columns: 1fr; }
