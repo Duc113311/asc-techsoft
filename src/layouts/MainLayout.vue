@@ -1,5 +1,5 @@
 <script setup>
-import { onBeforeUnmount, onMounted, provide, readonly, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, provide, readonly, ref, watch } from 'vue'
 import { RouterView, useRoute } from 'vue-router'
 import { getSiteData } from '../api/site.api'
 import AppHeader from '../components/AppHeader.vue'
@@ -7,6 +7,7 @@ import SiteFooter from '../components/SiteFooter.vue'
 import SiteSkeleton from '../components/SiteSkeleton.vue'
 import { getLocaleSite, mergeSiteData, useI18n } from '../i18n'
 import { siteContentKey } from '../shared/site-content'
+import { bgSlideUrl } from '../assets'
 
 const siteData = ref(null)
 const loadError = ref('')
@@ -57,12 +58,24 @@ onMounted(async () => {
 })
 
 onBeforeUnmount(() => clearTimeout(routeLoadingTimer))
+
+const hasSkyHero = computed(() => ['home', 'products', 'about', 'contact'].includes(route.name))
+const heroShellStyle = computed(() =>
+  hasSkyHero.value
+    ? {
+        backgroundImage: `url(${bgSlideUrl})`,
+        backgroundSize: '100% auto',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top center',
+      }
+    : {},
+)
 </script>
 
 <template>
   <SiteSkeleton v-if="!siteData && !loadError" />
   <SiteSkeleton v-else-if="isRouteLoading" />
-  <div v-else-if="siteData" class="page-shell">
+  <div v-else-if="siteData" class="page-shell" :style="heroShellStyle">
     <AppHeader :brand="localizedSiteData.brand" :navigation="localizedSiteData.navigation" />
     <main>
       <RouterView />

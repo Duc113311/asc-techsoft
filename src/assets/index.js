@@ -1,5 +1,15 @@
 import logoUrl from './images/img_logo_asc.png'
 import sliderImageUrl from './images/img_slider.png'
 import feedbackImageUrl from './images/img_feedback.png'
+import bgSlideUrl from './images/bg_slide.png'
+import bgFooterUrl from './images/bg_footer.png'
+import img1Url from './images/img_1.png'
+import img2Url from './images/img_2.png'
+import img3Url from './images/img_3.png'
+import img4Url from './images/img_4.png'
+import imgSlideProductUrl from './images/img_slide_product.png'
+import imgAboutUrl from './images/img_about.png'
+import imgContactUrl from './images/img_contact.png'
+import imgBgContactUrl from './images/img_bg_contact.png'
 
-export { feedbackImageUrl, logoUrl, sliderImageUrl }
+export { feedbackImageUrl, logoUrl, sliderImageUrl, bgSlideUrl, bgFooterUrl, img1Url, img2Url, img3Url, img4Url, imgSlideProductUrl, imgAboutUrl, imgContactUrl, imgBgContactUrl }

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { logoUrl } from '../assets'
 import AppLink from './AppLink.vue'
@@ -32,6 +32,11 @@ watch(
   },
 )
 
+const isScrolled = ref(false)
+function onScroll() { isScrolled.value = window.scrollY > 20 }
+onMounted(() => window.addEventListener('scroll', onScroll, { passive: true }))
+onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
+
 function isActive(item) {
   if (typeof item.to === 'string') {
     const localePrefix = route.params.locale ? `/${route.params.locale}` : ''
@@ -47,7 +52,7 @@ function isActive(item) {
 </script>
 
 <template>
-  <header class="site-header">
+  <header class="site-header" :class="{ scrolled: isScrolled }">
     <div class="container header-inner">
       <AppLink class="brand" to="/" :aria-label="brand.name">
         <img class="brand-logo" :src="logoUrl" :alt="brand.name" decoding="async" />

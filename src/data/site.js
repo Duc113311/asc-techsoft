@@ -20,10 +20,9 @@ export const siteData = {
     primaryCtaTarget: '/products',
     secondaryCtaTarget: '/contact',
     stats: [
-      { value: '100+', label: 'Projects Delivered' },
-      { value: '50+', label: 'Happy Clients' },
-      { value: '10+', label: 'Active Products' },
-      { value: '24/7', label: 'Customer Support' },
+      { value: '100+', label: 'Dự án hoàn thành' },
+      { value: '50+', label: 'Khách hàng đối tác' },
+      { value: '4.9/5', label: 'Đánh giá hài lòng' },
     ],
     featureBadges: ['Web Apps', 'Mobile Apps', 'Dashboards', 'AI Tools'],
   },
