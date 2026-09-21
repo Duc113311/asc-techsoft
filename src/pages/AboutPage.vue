@@ -1,6 +1,6 @@
 <script setup>
 import AppLink from '../components/AppLink.vue'
-import { imgAboutUrl, bgFooterUrl } from '../assets'
+import { imgAboutUrl, bgFooterUrl, sliderImageUrl } from '../assets'
 import { useSiteContent } from '../shared/site-content'
 import { useI18n } from '../i18n'
 
@@ -15,14 +15,14 @@ const { currentLocale } = useI18n()
     <section class="page-hero-section">
       <div class="container page-hero-grid">
         <div class="page-hero-copy">
-          <span class="hero-eyebrow">{{ currentLocale.ui.aboutEyebrow }}</span>
-          <h1 class="page-hero-headline">
+          <span v-reveal="0" class="hero-eyebrow">{{ currentLocale.ui.aboutEyebrow }}</span>
+          <h1 v-reveal="100" class="page-hero-headline">
             <span>{{ currentLocale.ui.aboutH1line1 }}</span>
             <span>{{ currentLocale.ui.aboutH1line2 }}</span>
             <span><em class="hero-accent">{{ currentLocale.ui.aboutH1line3 }}</em></span>
           </h1>
-          <p class="page-hero-desc">{{ currentLocale.ui.aboutHeroDesc }}</p>
-          <div class="hero-actions">
+          <p v-reveal="200" class="page-hero-desc">{{ currentLocale.ui.aboutHeroDesc }}</p>
+          <div v-reveal="300" class="hero-actions">
             <AppLink class="btn-green" to="#story">{{ currentLocale.ui.aboutStoryCta }} &rarr;</AppLink>
             <button class="btn-ghost" type="button">
               <span class="btn-ghost-play">&#9654;</span>
@@ -30,7 +30,7 @@ const { currentLocale } = useI18n()
             </button>
           </div>
         </div>
-        <div class="page-hero-visual">
+        <div v-reveal="200" class="page-hero-visual">
           <img class="page-hero-img" :src="imgAboutUrl" alt="ASC TechSoft office" fetchpriority="high" decoding="async" />
         </div>
       </div>
@@ -43,16 +43,21 @@ const { currentLocale } = useI18n()
       <section class="about-story-section" id="story">
         <div class="container about-story-grid">
           <div class="about-story-copy">
-            <span class="section-eyebrow">{{ currentLocale.ui.storyEyebrow }}</span>
-            <h2 class="about-story-title">
+            <span v-reveal="0" class="section-eyebrow">{{ currentLocale.ui.storyEyebrow }}</span>
+            <h2 v-reveal="80" class="about-story-title">
               {{ currentLocale.ui.storyH2line1 }}<br>
               {{ currentLocale.ui.storyH2line2 }} <em class="story-accent">{{ currentLocale.ui.storyH2accent }}</em>
             </h2>
-            <p class="about-story-desc">{{ currentLocale.ui.storyDesc }}</p>
-            <AppLink class="btn-outline" to="/contact">{{ currentLocale.ui.storyLearnMore }} &rarr;</AppLink>
+            <p v-reveal="160" class="about-story-desc">{{ currentLocale.ui.storyDesc }}</p>
+            <AppLink v-reveal="240" class="btn-outline" to="/contact">{{ currentLocale.ui.storyLearnMore }} &rarr;</AppLink>
           </div>
           <div class="about-timeline">
-            <div v-for="item in currentLocale.ui.aboutTimeline" :key="item.year" class="timeline-item">
+            <div
+              v-for="(item, i) in currentLocale.ui.aboutTimeline"
+              :key="item.year"
+              v-reveal="i * 80"
+              class="timeline-item"
+            >
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <strong class="timeline-year">{{ item.year }}</strong>
@@ -61,14 +66,8 @@ const { currentLocale } = useI18n()
               </div>
             </div>
           </div>
-          <div class="about-office-card">
-            <div class="office-card-inner">
-              <p class="office-quote">"Great People<br>Build<br>Great Products"</p>
-              <div class="office-label">
-                <span class="office-label-sub">OUR OFFICE</span>
-                <span class="office-label-name">Ha Noi, Viet Nam</span>
-              </div>
-            </div>
+          <div v-reveal="160" class="about-office-img-wrap">
+            <img :src="sliderImageUrl" alt="AscTechSoft office" class="about-office-img" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -76,11 +75,16 @@ const { currentLocale } = useI18n()
       <!-- Values -->
       <section class="about-values-section">
         <div class="container">
-          <span class="section-eyebrow">{{ currentLocale.ui.valuesEyebrow }}</span>
-          <h2 class="about-values-title">{{ currentLocale.ui.valuesH2 }}</h2>
-          <p class="about-values-desc">{{ currentLocale.ui.valuesDesc }}</p>
+          <span v-reveal="0" class="section-eyebrow">{{ currentLocale.ui.valuesEyebrow }}</span>
+          <h2 v-reveal="80" class="about-values-title">{{ currentLocale.ui.valuesH2 }}</h2>
+          <p v-reveal="160" class="about-values-desc">{{ currentLocale.ui.valuesDesc }}</p>
           <div class="about-values-grid">
-            <div v-for="v in currentLocale.ui.aboutValues" :key="v.title" class="about-value-card">
+            <div
+              v-for="(v, i) in currentLocale.ui.aboutValues"
+              :key="v.title"
+              v-reveal="i * 80"
+              class="about-value-card"
+            >
               <span class="value-card-icon">{{ v.icon }}</span>
               <strong class="value-card-title">{{ v.title }}</strong>
               <p class="value-card-desc">{{ v.desc }}</p>
@@ -92,7 +96,7 @@ const { currentLocale } = useI18n()
       <!-- CTA bottom -->
       <section class="about-cta-section" :style="{ backgroundImage: `url(${bgFooterUrl})` }">
         <div class="container about-cta-inner">
-          <div class="about-cta-copy">
+          <div v-reveal="0" class="about-cta-copy">
             <span class="section-eyebrow about-cta-eyebrow">{{ currentLocale.ui.ctaBrightEyebrow }}</span>
             <h2 class="about-cta-title">{{ currentLocale.ui.ctaBrightLine1 }}<br><em class="hero-accent">{{ currentLocale.ui.ctaBrightLine2 }}</em></h2>
             <p class="about-cta-desc">{{ currentLocale.ui.ctaBrightDesc }}</p>
@@ -100,11 +104,6 @@ const { currentLocale } = useI18n()
               <AppLink class="btn-green" to="/contact">{{ currentLocale.ui.ctaBrightCta1 }} &rarr;</AppLink>
               <AppLink class="btn-ghost" to="/contact">{{ currentLocale.ui.ctaBrightCta2 }}</AppLink>
             </div>
-          </div>
-          <div class="about-cta-badge">
-            <span>A BRIGHTER</span>
-            <span>DIGITAL</span>
-            <span>TOMORROW</span>
           </div>
         </div>
       </section>

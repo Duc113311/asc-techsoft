@@ -113,7 +113,7 @@
 
         <h2>Contact Us</h2>
         <p>If you have questions, privacy concerns, or requests regarding this Privacy Policy, please contact:<br />
-        <strong>AscTechSoft</strong> — <a href="mailto:contact@asctechsoft.com">contact@asctechsoft.com</a></p>
+        <strong>AscTechSoft</strong> — <a href="mailto:contact.support@asctechsoft.com">contact.support@asctechsoft.com</a></p>
 
       </div>
     </div>

@@ -20,15 +20,16 @@ const projectTags = [
   <section class="projects-section" id="products">
     <div class="container projects-grid">
       <div class="projects-copy">
-        <span class="section-eyebrow">{{ currentLocale.ui.projectsEyebrow }}</span>
-        <h2 class="projects-title">SẢN PHẨM THỰC TẾ.<br>KẾT QUẢ THẬT.</h2>
-        <p class="projects-desc">{{ siteData.homePage.productsSubtitle }}</p>
-        <AppLink class="btn-dark" to="/products">{{ siteData.homePage.viewAllProducts }} &rarr;</AppLink>
+        <span v-reveal="0" class="section-eyebrow">{{ currentLocale.ui.projectsEyebrow }}</span>
+        <h2 v-reveal="80" class="projects-title">{{ currentLocale.ui.homeProductsH2 }}</h2>
+        <p v-reveal="160" class="projects-desc">{{ siteData.homePage.productsSubtitle }}</p>
+        <AppLink v-reveal="240" class="btn-dark" to="/products">{{ siteData.homePage.viewAllProducts }} &rarr;</AppLink>
       </div>
       <div class="projects-cards">
         <AppLink
           v-for="(p, i) in currentLocale.ui.featuredProjects"
           :key="p.title"
+          v-reveal="i * 100"
           to="/products"
           class="project-card"
         >

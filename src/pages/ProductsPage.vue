@@ -9,7 +9,7 @@ import { useI18n } from '../i18n'
 const siteData = useSiteContent()
 const { currentLocale } = useI18n()
 const activeCategory = ref('All')
-const categoryValues = ['All', 'Apps', 'Platforms', 'SaaS', 'Tools']
+const categoryValues = ['All', 'Apps', 'Platforms', 'Tools']
 
 const productPage = computed(() => siteData.value?.productPage ?? null)
 const catalog = computed(() => siteData.value?.productCatalog ?? [])
@@ -26,14 +26,14 @@ const filteredProducts = computed(() => {
     <section class="page-hero-section">
       <div class="container page-hero-grid">
         <div class="page-hero-copy">
-          <span class="hero-eyebrow">{{ currentLocale.ui.productsEyebrow }}</span>
-          <h1 class="page-hero-headline">
+          <span v-reveal="0" class="hero-eyebrow">{{ currentLocale.ui.productsEyebrow }}</span>
+          <h1 v-reveal="100" class="page-hero-headline">
             <span>{{ currentLocale.ui.productsH1line1 }}</span>
             <span>{{ currentLocale.ui.productsH1line2 }}</span>
             <span><em class="hero-accent">{{ currentLocale.ui.productsH1line3 }}</em></span>
           </h1>
-          <p class="page-hero-desc">{{ currentLocale.ui.productsHeroDesc }}</p>
-          <div class="hero-actions">
+          <p v-reveal="200" class="page-hero-desc">{{ currentLocale.ui.productsHeroDesc }}</p>
+          <div v-reveal="300" class="hero-actions">
             <AppLink class="btn-green" to="/contact">{{ currentLocale.ui.productsExploreCta }} &rarr;</AppLink>
             <button class="btn-ghost" type="button">
               <span class="btn-ghost-play">&#9654;</span>
@@ -41,7 +41,7 @@ const filteredProducts = computed(() => {
             </button>
           </div>
         </div>
-        <div class="page-hero-visual">
+        <div v-reveal="200" class="page-hero-visual">
           <img
             class="page-hero-img"
             :src="imgSlideProductUrl"
@@ -60,16 +60,17 @@ const filteredProducts = computed(() => {
       <div class="container">
         <div class="products-catalog-header">
           <div>
-            <span class="section-eyebrow">{{ currentLocale.ui.catalogEyebrow }}</span>
-            <h2 class="catalog-title">{{ currentLocale.ui.catalogH2line1 }}<br>{{ currentLocale.ui.catalogH2line2 }}</h2>
-            <p class="catalog-desc">{{ currentLocale.ui.catalogDesc }}</p>
+            <span v-reveal="0" class="section-eyebrow">{{ currentLocale.ui.catalogEyebrow }}</span>
+            <h2 v-reveal="80" class="catalog-title">{{ currentLocale.ui.catalogH2line1 }}<br>{{ currentLocale.ui.catalogH2line2 }}</h2>
+            <p v-reveal="160" class="catalog-desc">{{ currentLocale.ui.catalogDesc }}</p>
           </div>
-          <AppLink class="btn-dark" to="/products">{{ currentLocale.ui.viewAllProducts }} &rarr;</AppLink>
+          <AppLink v-reveal="80" class="btn-dark" to="/products">{{ currentLocale.ui.viewAllProducts }} &rarr;</AppLink>
         </div>
         <div class="products-catalog-grid">
           <ProductCard
-            v-for="product in filteredProducts"
+            v-for="(product, i) in filteredProducts"
             :key="product.name"
+            v-reveal="i * 80"
             :product="product"
             mode="catalog"
           />

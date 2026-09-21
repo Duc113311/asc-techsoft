@@ -15,14 +15,14 @@ const { currentLocale } = useI18n()
   <section class="hero-section">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="hero-eyebrow">{{ brand.tagline }}</span>
-        <h1 class="hero-headline">
+        <span v-reveal="0" class="hero-eyebrow">{{ brand.tagline }}</span>
+        <h1 v-reveal="100" class="hero-headline">
           <span>{{ currentLocale.ui.heroLine1 }}</span>
           <span>{{ currentLocale.ui.heroLine2 }}</span>
           <span>{{ currentLocale.ui.heroLine3pre ? currentLocale.ui.heroLine3pre + ' ' : '' }}<em class="hero-accent">{{ currentLocale.ui.heroLine3accent }}</em></span>
         </h1>
-        <p class="hero-desc">{{ hero.description }}</p>
-        <div class="hero-actions">
+        <p v-reveal="200" class="hero-desc">{{ hero.description }}</p>
+        <div v-reveal="300" class="hero-actions">
           <AppLink class="btn-green" :to="hero.primaryCtaTarget">{{ hero.primaryCta }} &rarr;</AppLink>
           <AppLink class="btn-ghost" :to="hero.secondaryCtaTarget">
             <span class="btn-ghost-play">&#9654;</span>
@@ -31,7 +31,7 @@ const { currentLocale } = useI18n()
         </div>
       </div>
 
-      <div class="hero-visual">
+      <div v-reveal="200" class="hero-visual">
         <div class="hero-globe-wrap">
           <img class="hero-globe" :src="img2Url" alt="Digital platform globe" fetchpriority="high" decoding="async" />
           <div class="hero-badge hero-badge-marketing">

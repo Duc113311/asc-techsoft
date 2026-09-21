@@ -26,19 +26,19 @@ function toggleFaq(i) { openFaq.value = openFaq.value === i ? null : i }
     <section class="page-hero-section">
       <div class="container page-hero-grid">
         <div class="page-hero-copy">
-          <span class="hero-eyebrow">{{ currentLocale.ui.contactEyebrow }}</span>
-          <h1 class="page-hero-headline">
+          <span v-reveal="0" class="hero-eyebrow">{{ currentLocale.ui.contactEyebrow }}</span>
+          <h1 v-reveal="100" class="page-hero-headline">
             <span>{{ currentLocale.ui.contactH1line1 }}</span>
             <span>{{ currentLocale.ui.contactH1line2 }}</span>
             <span><em class="hero-accent">{{ currentLocale.ui.contactH1line3 }}</em></span>
           </h1>
-          <p class="page-hero-desc">{{ currentLocale.ui.contactHeroDesc }}</p>
-          <div class="hero-actions">
+          <p v-reveal="200" class="page-hero-desc">{{ currentLocale.ui.contactHeroDesc }}</p>
+          <div v-reveal="300" class="hero-actions">
             <a class="btn-green" href="#contact-form">&#9993; {{ currentLocale.ui.sendMsgCta }} &rarr;</a>
             <a class="btn-ghost" href="#contact-form">&#128197; {{ currentLocale.ui.bookMeetingCta }}</a>
           </div>
         </div>
-        <div class="page-hero-visual">
+        <div v-reveal="200" class="page-hero-visual">
           <img class="page-hero-img" :src="imgContactUrl" alt="Let's Connect" fetchpriority="high" decoding="async" />
         </div>
       </div>
@@ -52,7 +52,7 @@ function toggleFaq(i) { openFaq.value = openFaq.value === i ? null : i }
         <div class="container contact-main-grid">
 
           <!-- Form -->
-          <div class="contact-form-col">
+          <div v-reveal="0" class="contact-form-col">
             <span class="section-eyebrow">{{ currentLocale.ui.formSectionEyebrow }}</span>
             <h2 class="contact-section-title">{{ currentLocale.ui.formH2line1 }} <em class="hero-accent">{{ currentLocale.ui.formH2line2 }}</em></h2>
             <p class="contact-section-desc">{{ currentLocale.ui.formSectionDesc }}</p>
@@ -81,37 +81,39 @@ function toggleFaq(i) { openFaq.value = openFaq.value === i ? null : i }
           </div>
 
           <!-- Contact Info -->
-          <div class="contact-info-col">
+          <div v-reveal="120" class="contact-info-col">
             <span class="section-eyebrow">{{ currentLocale.ui.contactInfoEyebrow }}</span>
             <h2 class="contact-section-title">{{ currentLocale.ui.contactInfoH2line1 }} <em class="hero-accent">{{ currentLocale.ui.contactInfoH2line2 }}</em></h2>
             <p class="contact-section-desc">{{ currentLocale.ui.contactInfoDesc }}</p>
             <div class="contact-info-grid">
-              <div class="contact-info-card">
-                <span class="info-icon">&#9993;</span>
+              <div v-reveal="0" class="contact-info-card">
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </span>
                 <strong>{{ currentLocale.ui.infoEmailTitle }}</strong>
                 <AppLink :to="`mailto:${siteData.footer.contact.email}`">{{ siteData.footer.contact.email }}</AppLink>
                 <span class="info-note">{{ currentLocale.ui.infoEmailNote }}</span>
               </div>
-              <div class="contact-info-card">
-                <span class="info-icon">&#128222;</span>
+              <div v-reveal="80" class="contact-info-card">
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </span>
                 <strong>{{ currentLocale.ui.infoCallTitle }}</strong>
                 <AppLink :to="`tel:${siteData.footer.contact.phoneRaw ?? siteData.footer.contact.phone}`">{{ siteData.footer.contact.phone }}</AppLink>
                 <span class="info-note">{{ currentLocale.ui.infoCallNote }}</span>
               </div>
-              <div class="contact-info-card">
-                <span class="info-icon">&#128205;</span>
+              <div v-reveal="160" class="contact-info-card">
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </span>
                 <strong>{{ currentLocale.ui.infoOfficeTitle }}</strong>
                 <span>{{ siteData.footer.contact.address }}</span>
               </div>
-              <div class="contact-info-card">
-                <span class="info-icon">&#128101;</span>
+              <div v-reveal="240" class="contact-info-card">
+                <span class="info-icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                </span>
                 <strong>{{ currentLocale.ui.infoFollowTitle }}</strong>
-                <div class="social-links">
-                  <a href="#" aria-label="LinkedIn" class="social-linkedin">in</a>
-                  <a href="#" aria-label="Facebook" class="social-facebook">f</a>
-                  <a href="#" aria-label="YouTube" class="social-youtube">▶</a>
-                  <a href="#" aria-label="GitHub" class="social-github">gh</a>
-                </div>
                 <span class="info-note">{{ currentLocale.ui.infoFollowNote }}</span>
               </div>
             </div>
@@ -122,24 +124,30 @@ function toggleFaq(i) { openFaq.value = openFaq.value === i ? null : i }
       <!-- Map + FAQ -->
       <section class="contact-map-faq-section">
         <div class="container contact-map-faq-grid">
-          <div class="contact-map-col">
+          <div v-reveal="0" class="contact-map-col">
             <span class="section-eyebrow">{{ currentLocale.ui.mapEyebrow }}</span>
             <h2 class="contact-section-title">{{ currentLocale.ui.mapH2line1 }} <em class="hero-accent">{{ currentLocale.ui.mapH2line2 }}</em></h2>
             <div class="contact-map-wrap">
               <iframe
-                src="https://maps.google.com/maps?q=20.9629797,105.7461722&hl=vi&z=15&output=embed"
+                src="https://maps.google.com/maps?q=Park+City+Hanoi,+Le+Trong+Tan,+La+Khe,+Duong+Noi,+Hanoi,+Vietnam&hl=vi&z=16&output=embed"
                 style="width:100%;height:100%;border:0;"
                 loading="lazy"
                 allowfullscreen
               ></iframe>
             </div>
           </div>
-          <div class="contact-faq-col">
+          <div v-reveal="120" class="contact-faq-col">
             <span class="section-eyebrow">{{ currentLocale.ui.faqEyebrow }}</span>
             <h2 class="contact-section-title">{{ currentLocale.ui.faqH2 }} <em class="hero-accent">{{ currentLocale.ui.faqH2accent }}</em></h2>
             <p class="contact-section-desc">{{ currentLocale.ui.faqDesc }}</p>
             <div class="faq-list">
-              <div v-for="(faq, i) in currentLocale.ui.faqs" :key="i" class="faq-item" :class="{ open: openFaq === i }">
+              <div
+                v-for="(faq, i) in currentLocale.ui.faqs"
+                :key="i"
+                v-reveal="i * 60"
+                class="faq-item"
+                :class="{ open: openFaq === i }"
+              >
                 <button class="faq-question" type="button" @click="toggleFaq(i)">
                   <span>{{ faq.q }}</span>
                   <span class="faq-icon">{{ openFaq === i ? '−' : '+' }}</span>
@@ -154,7 +162,7 @@ function toggleFaq(i) { openFaq.value = openFaq.value === i ? null : i }
       <!-- Bottom CTA -->
       <section class="about-cta-section" :style="{ backgroundImage: `url(${bgFooterUrl})` }">
         <div class="container about-cta-inner">
-          <div class="about-cta-copy">
+          <div v-reveal="0" class="about-cta-copy">
             <span class="section-eyebrow about-cta-eyebrow">{{ currentLocale.ui.ctaBrightEyebrow }}</span>
             <h2 class="about-cta-title">{{ currentLocale.ui.ctaBrightLine1 }}<br><em class="hero-accent">{{ currentLocale.ui.ctaBrightLine2 }}</em></h2>
             <p class="about-cta-desc">{{ currentLocale.ui.ctaBrightDesc }}</p>
@@ -162,11 +170,6 @@ function toggleFaq(i) { openFaq.value = openFaq.value === i ? null : i }
               <AppLink class="btn-green" to="#contact-form">{{ currentLocale.ui.ctaBrightCta1 }} &rarr;</AppLink>
               <AppLink class="btn-ghost" to="#contact-form">{{ currentLocale.ui.ctaBrightCta2 }}</AppLink>
             </div>
-          </div>
-          <div class="about-cta-badge">
-            <span>A BRIGHTER</span>
-            <span>DIGITAL</span>
-            <span>TOMORROW</span>
           </div>
         </div>
       </section>

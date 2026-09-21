@@ -26,9 +26,7 @@ function submitForm() {
           {{ currentLocale.ui.ctaWorkLine1 }}<br>
           <em class="cta-gradient-text">{{ currentLocale.ui.ctaWorkLine2 }}</em>
         </h2>
-        <p class="cta-contact-desc">
-          Dù bạn chỉ có ý tưởng hay đã có kế hoạch rõ ràng, chúng tôi luôn sẵn sàng lắng nghe và đồng hành.
-        </p>
+        <p class="cta-contact-desc">{{ currentLocale.ui.ctaFormDesc }}</p>
         <div class="cta-contact-info">
           <a :href="'mailto:' + siteData.footer.contact.email" class="cta-info-item">
             <span class="cta-info-icon">✉</span>
@@ -46,61 +44,51 @@ function submitForm() {
       </div>
 
       <div class="cta-form-card">
-        <h3 class="cta-form-title">NHẬN TƯ VẤN DỰ ÁN</h3>
+        <h3 class="cta-form-title">{{ currentLocale.ui.ctaFormTitle }}</h3>
         <div v-if="submitted" class="form-success-msg">
-          Cảm ơn! Chúng tôi sẽ liên hệ bạn sớm.
+          {{ currentLocale.ui.ctaFormSuccess }}
         </div>
         <form v-else class="cta-form" @submit.prevent="submitForm">
           <div class="form-row">
             <label class="form-field">
-              <span>Họ và tên <em>*</em></span>
-              <input v-model="form.name" type="text" placeholder="Nguyễn Văn A" required />
+              <span>{{ currentLocale.ui.ctaFormName }} <em>*</em></span>
+              <input v-model="form.name" type="text" :placeholder="currentLocale.ui.ctaFormNamePlaceholder" required />
             </label>
             <label class="form-field">
-              <span>Email <em>*</em></span>
+              <span>{{ currentLocale.ui.ctaFormEmail }} <em>*</em></span>
               <input v-model="form.email" type="email" placeholder="you@example.com" required />
             </label>
           </div>
           <div class="form-row">
             <label class="form-field">
-              <span>Loại sản phẩm</span>
+              <span>{{ currentLocale.ui.ctaFormType }}</span>
               <select v-model="form.type">
-                <option value="">Chọn loại sản phẩm</option>
-                <option>Mobile App</option>
-                <option>Web App</option>
-                <option>SaaS</option>
-                <option>Marketing</option>
-                <option>Khác</option>
+                <option value="">{{ currentLocale.ui.ctaFormTypeSelect }}</option>
+                <option v-for="opt in currentLocale.ui.ctaFormTypeOpts" :key="opt" :value="opt">{{ opt }}</option>
               </select>
             </label>
             <label class="form-field">
-              <span>Ngân sách dự kiến</span>
+              <span>{{ currentLocale.ui.ctaFormBudget }}</span>
               <select v-model="form.budget">
-                <option value="">Chọn ngân sách</option>
-                <option>Dưới 50 triệu</option>
-                <option>50 - 200 triệu</option>
-                <option>200 - 500 triệu</option>
-                <option>Trên 500 triệu</option>
+                <option value="">{{ currentLocale.ui.ctaFormBudgetSelect }}</option>
+                <option v-for="opt in currentLocale.ui.ctaFormBudgetOpts" :key="opt" :value="opt">{{ opt }}</option>
               </select>
             </label>
           </div>
           <div class="form-row">
             <label class="form-field">
-              <span>Thời gian dự kiến</span>
+              <span>{{ currentLocale.ui.ctaFormTimeline }}</span>
               <select v-model="form.timeline">
-                <option value="">Chọn thời gian</option>
-                <option>1 - 3 tháng</option>
-                <option>3 - 6 tháng</option>
-                <option>6 - 12 tháng</option>
-                <option>Trên 12 tháng</option>
+                <option value="">{{ currentLocale.ui.ctaFormTimelineSelect }}</option>
+                <option v-for="opt in currentLocale.ui.ctaFormTimelineOpts" :key="opt" :value="opt">{{ opt }}</option>
               </select>
             </label>
             <label class="form-field">
-              <span>Nội dung dự án</span>
-              <textarea v-model="form.message" placeholder="Chia sẻ thêm về ý tưởng của bạn..." rows="3"></textarea>
+              <span>{{ currentLocale.ui.ctaFormMessage }}</span>
+              <textarea v-model="form.message" :placeholder="currentLocale.ui.ctaFormMessagePlaceholder" rows="3"></textarea>
             </label>
           </div>
-          <button type="submit" class="btn-form-submit">Gửi yêu cầu &rarr;</button>
+          <button type="submit" class="btn-form-submit">{{ currentLocale.ui.ctaFormSubmit }} &rarr;</button>
         </form>
       </div>
     </div>

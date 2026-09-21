@@ -1,8 +1,17 @@
 import { computed, ref } from 'vue'
 import en from './locales/en'
 import vi from './locales/vi'
+import ko from './locales/ko'
+import ja from './locales/ja'
+import zh from './locales/zh'
+import fr from './locales/fr'
+import it from './locales/it'
+import id from './locales/id'
+import es from './locales/es'
+import pt from './locales/pt'
+import ar from './locales/ar'
 
-const locales = { en, vi }
+const locales = { en, vi, ko, ja, zh, fr, it, id, es, pt, ar }
 const storedLocale = typeof window !== 'undefined' ? localStorage.getItem('asc-language') : null
 const locale = ref(locales[storedLocale] ? storedLocale : 'en')
 

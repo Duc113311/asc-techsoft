@@ -5,6 +5,7 @@ import ProductsPage from '../pages/ProductsPage.vue'
 import AboutPage from '../pages/AboutPage.vue'
 import ContactPage from '../pages/ContactPage.vue'
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage.vue'
+import TermsOfServicePage from '../pages/TermsOfServicePage.vue'
 import AquaMindPrivacyPage from '../pages/AquaMindPrivacyPage.vue'
 
 const routes = [
@@ -13,7 +14,7 @@ const routes = [
     redirect: '/en',
   },
   {
-    path: '/:locale(en|vn)',
+    path: '/:locale(en|vn|ko|ja|zh|fr|it|id|es|pt|ar)',
     component: MainLayout,
     children: [
       {
@@ -41,6 +42,11 @@ const routes = [
         name: 'privacy-policy',
         component: PrivacyPolicyPage,
       },
+      {
+        path: 'terms',
+        name: 'terms',
+        component: TermsOfServicePage,
+      },
     ],
   },
   { path: '/privacy/policy-aquamind', component: AquaMindPrivacyPage, name: 'aquamind-privacy' },
@@ -48,6 +54,7 @@ const routes = [
   { path: '/about', redirect: '/en/about' },
   { path: '/contact', redirect: '/en/contact' },
   { path: '/privacy-policy', redirect: '/en/privacy-policy' },
+  { path: '/terms', redirect: '/en/terms' },
 ]
 
 const router = createRouter({

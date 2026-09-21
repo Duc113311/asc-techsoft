@@ -12,16 +12,17 @@ const isExternal = computed(() => typeof props.to === 'string' && /^(https?:|mai
 const isAnchor = computed(() => typeof props.to === 'string' && props.to.startsWith('#'))
 const isRouterTarget = computed(() => !isExternal.value && !isAnchor.value)
 const localizedTo = computed(() => {
-  const prefix = locale.value === 'vi' ? '/vn' : '/en'
+  const prefix = locale.value === 'vi' ? '/vn' : `/${locale.value || 'en'}`
+  const validLocales = ['en', 'vn', 'ko', 'ja', 'zh', 'fr', 'it', 'id', 'es', 'pt', 'ar']
 
   if (typeof props.to === 'string') {
-    if (props.to === '/en' || props.to === '/vn' || props.to.startsWith('/en/') || props.to.startsWith('/vn/')) return props.to
+    if (validLocales.some((loc) => props.to === `/${loc}` || props.to.startsWith(`/${loc}/`))) return props.to
     return `${prefix}${props.to === '/' ? '' : props.to}`
   }
 
   if (props.to && typeof props.to === 'object' && props.to.path) {
     const path = props.to.path
-    if (path.startsWith('/en') || path.startsWith('/vn')) return props.to
+    if (validLocales.some((loc) => path.startsWith(`/${loc}`))) return props.to
     return { ...props.to, path: `${prefix}${path === '/' ? '' : path}` }
   }
 
