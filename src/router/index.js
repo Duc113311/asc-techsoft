@@ -7,6 +7,7 @@ import ContactPage from '../pages/ContactPage.vue'
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage.vue'
 import TermsOfServicePage from '../pages/TermsOfServicePage.vue'
 import AquaMindPrivacyPage from '../pages/AquaMindPrivacyPage.vue'
+import WorkDayPrivacyPage from '../pages/WorkDayPrivacyPage.vue'
 
 const routes = [
   {
@@ -50,6 +51,7 @@ const routes = [
     ],
   },
   { path: '/privacy/policy-aquamind', component: AquaMindPrivacyPage, name: 'aquamind-privacy' },
+  { path: '/privacy/policy-workday', component: WorkDayPrivacyPage, name: 'workday-privacy' },
   { path: '/products', redirect: '/en/products' },
   { path: '/about', redirect: '/en/about' },
   { path: '/contact', redirect: '/en/contact' },
