@@ -4,7 +4,7 @@
       <div class="pp-container">
         <span class="pp-eyebrow">Legal</span>
         <h1>Privacy Policy<br /><span>AquaMind</span></h1>
-        <p class="pp-updated">Last updated: September 15, 2026</p>
+        <p class="pp-updated">Last updated: September 27, 2026</p>
       </div>
     </div>
 
@@ -40,17 +40,39 @@
             <li>Firebase Crashlytics</li>
             <li>Firebase Cloud Messaging</li>
             <li>Firebase Remote Config</li>
+            <li>Cloud Firestore</li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google Mobile Ads (AdMob)</a></li>
           </ul>
           <h3>These services may process information such as:</h3>
           <ul>
-            <li>Device identifiers</li>
+            <li>Device identifiers, including the advertising identifier</li>
             <li>Device model and operating system information</li>
             <li>Application version and configuration</li>
             <li>App interaction and usage events</li>
             <li>Crash and diagnostic information</li>
-            <li>IP address</li>
+            <li>IP address (used, among other things, to estimate your general region for advertising consent requirements)</li>
           </ul>
         </div>
+
+        <h2>Advertising</h2>
+        <p>AquaMind shows ads (banner, interstitial, native, and app-open formats) served through <strong>Google AdMob</strong>. AdMob and its advertising partners may collect and process your advertising identifier, IP address, device information, and app interaction data to serve and measure ads, and — where you've consented — to personalize them.</p>
+        <div class="pp-grid">
+          <div class="pp-point">
+            <span class="pp-dot"></span>
+            <div><strong>Consent (EEA, UK, Switzerland)</strong><p>If AquaMind detects you're in a region covered by GDPR-style consent requirements, it shows Google's User Messaging Platform (UMP) consent form before any personalized ad is requested, letting you choose whether to allow personalized advertising.</p></div>
+          </div>
+          <div class="pp-point">
+            <span class="pp-dot"></span>
+            <div><strong>Managing ad personalization</strong><p>You can review or withdraw ad consent at any time from AquaMind's own Settings screen, or manage ads personalization for your device generally at Android Settings → Google → Ads.</p></div>
+          </div>
+          <div class="pp-point">
+            <span class="pp-dot"></span>
+            <div><strong>Learn more</strong><p>See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.</p></div>
+          </div>
+        </div>
+
+        <h2>Feedback</h2>
+        <p>When you submit feedback from within AquaMind, the category, subject, and message you write are sent to Cloud Firestore. Each submission is tagged with a locally-generated device id, so we can follow up. You can optionally attach screenshots — at this time only the number of attachments is recorded, the images themselves are not uploaded.</p>
 
         <h2>Health Connect (Android)</h2>
         <p>AquaMind provides an optional integration with Health Connect by Android. This integration is disabled by default and becomes active only when you enable "Health Connect" in the app settings and explicitly grant the requested permission.</p>
@@ -78,18 +100,19 @@
         <ul>
           <li><strong>Notifications</strong> — to send hydration reminders</li>
           <li><strong>Health Connect (write hydration)</strong> — only if you enable the Health Connect sync feature</li>
+          <li><strong>Photos / media</strong> — only if you choose to attach a screenshot to a feedback submission</li>
         </ul>
         <p>The app requests permissions only when required for the corresponding user-facing functionality.</p>
 
         <h2>Service Providers</h2>
-        <p>We may use third-party companies or services to provide application infrastructure, deliver notifications, analyze application performance, and diagnose crashes. These service providers may process information only as necessary to provide their respective services and are subject to their own privacy policies and legal obligations.</p>
+        <p>We may use third-party companies or services to provide application infrastructure, deliver notifications, analyze application performance, diagnose crashes, and serve and measure advertising. These service providers may process information only as necessary to provide their respective services and are subject to their own privacy policies and legal obligations.</p>
 
         <h2>Data Retention</h2>
         <div class="pp-card">
           <h3>Data stored by AquaMind</h3>
           <p>Hydration records, profile information, preferences, and other locally stored app data remain on your device until you delete the relevant data within the app, clear the app's storage, or uninstall the app.</p>
           <h3>Third-party data</h3>
-          <p>Information processed by Firebase or Google Play Services is retained according to each provider's applicable retention settings and privacy policies.</p>
+          <p>Information processed by Firebase or Google Play Services is retained according to each provider's applicable retention settings and privacy policies. Feedback submissions stored in Cloud Firestore are retained until you request deletion (see below).</p>
         </div>
 
         <h2>How to Delete Your Data</h2>
@@ -97,6 +120,8 @@
           <li><strong>Delete AquaMind data:</strong> Android Settings → Apps → AquaMind → Storage → Clear storage / Clear data, or uninstall the app. This action cannot be undone.</li>
           <li><strong>Delete Health Connect data written by AquaMind:</strong> Android Settings → Health Connect → Data and access → Hydration.</li>
           <li><strong>Revoke Health Connect permission:</strong> Android Settings → Health Connect → App permissions → AquaMind.</li>
+          <li><strong>Delete feedback data:</strong> contact us at <a href="mailto:contact.support@asctechsoft.com">contact.support@asctechsoft.com</a>, and we will delete your feedback records from Cloud Firestore.</li>
+          <li><strong>Reset your advertising identifier or opt out of ads personalization:</strong> Android Settings → Google → Ads.</li>
         </ul>
 
         <h2>Security</h2>
