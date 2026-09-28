@@ -59,6 +59,17 @@ const routes = [
   { path: '/terms', redirect: '/en/terms' },
 ]
 
+const pageTitles = {
+  'home': 'AscTechSoft - Digital Product Development & Software Solutions',
+  'products': 'Products & Services | AscTechSoft',
+  'about': 'About Us | AscTechSoft - Software Development Company',
+  'contact': 'Contact Us | AscTechSoft',
+  'privacy-policy': 'Privacy Policy | AscTechSoft',
+  'terms': 'Terms of Service | AscTechSoft',
+  'aquamind-privacy': 'AquaMind Privacy Policy',
+  'workday-privacy': 'WorkDay Privacy Policy',
+}
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
@@ -73,6 +84,11 @@ const router = createRouter({
 
     return { top: 0 }
   },
+})
+
+router.beforeEach((to) => {
+  const title = pageTitles[to.name] || 'AscTechSoft'
+  document.title = title
 })
 
 export default router
