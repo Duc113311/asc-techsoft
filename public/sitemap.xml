@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://asctechsoft.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://asctechsoft.com/vn"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asctechsoft.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://asctechsoft.com/ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://asctechsoft.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://asctechsoft.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asctechsoft.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://asctechsoft.com/it"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://asctechsoft.com/id"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asctechsoft.com/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://asctechsoft.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://asctechsoft.com/ar"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Products -->
+  <url>
+    <loc>https://asctechsoft.com/en/products</loc>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://asctechsoft.com/vn/products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asctechsoft.com/en/products"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://asctechsoft.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://asctechsoft.com/vn/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asctechsoft.com/en/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://asctechsoft.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://asctechsoft.com/vn/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asctechsoft.com/en/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://asctechsoft.com/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://asctechsoft.com/vn/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asctechsoft.com/en/privacy-policy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms -->
+  <url>
+    <loc>https://asctechsoft.com/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://asctechsoft.com/vn/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asctechsoft.com/en/terms"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- AquaMind Privacy -->
+  <url>
+    <loc>https://asctechsoft.com/privacy/policy-aquamind</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- WorkDay Privacy -->
+  <url>
+    <loc>https://asctechsoft.com/privacy/policy-workday</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
