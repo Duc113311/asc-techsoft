@@ -8,6 +8,7 @@ import PrivacyPolicyPage from '../pages/PrivacyPolicyPage.vue'
 import TermsOfServicePage from '../pages/TermsOfServicePage.vue'
 import AquaMindPrivacyPage from '../pages/AquaMindPrivacyPage.vue'
 import WorkDayPrivacyPage from '../pages/WorkDayPrivacyPage.vue'
+import MuvikPrivacyPage from '../pages/MuvikPrivacyPage.vue'
 
 const routes = [
   {
@@ -52,6 +53,7 @@ const routes = [
   },
   { path: '/privacy/policy-aquamind', component: AquaMindPrivacyPage, name: 'aquamind-privacy' },
   { path: '/privacy/policy-workday', component: WorkDayPrivacyPage, name: 'workday-privacy' },
+  { path: '/privacy/policy-muvik', component: MuvikPrivacyPage, name: 'muvik-privacy' },
   { path: '/products', redirect: '/en/products' },
   { path: '/about', redirect: '/en/about' },
   { path: '/contact', redirect: '/en/contact' },
