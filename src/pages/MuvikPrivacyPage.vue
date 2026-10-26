@@ -1,10 +1,13 @@
 <template>
   <div class="pp-page">
     <div class="pp-hero">
-      <div class="pp-container">
-        <span class="pp-eyebrow">Legal</span>
-        <h1>Privacy Policy<br /><span>Muvik</span></h1>
-        <p class="pp-updated">Last updated: October 13, 2026</p>
+      <div class="pp-container pp-hero-inner">
+        <div class="pp-hero-text">
+          <span class="pp-eyebrow">Legal</span>
+          <h1>Privacy Policy<br /><span>Muvik</span></h1>
+          <p class="pp-updated">Last updated: October 26, 2026</p>
+        </div>
+        <img class="pp-logo" src="/privacy/muvik-logo.webp" alt="Muvik app icon" width="128" height="128" />
       </div>
     </div>
 
@@ -22,7 +25,7 @@
           </div>
           <div class="pp-point">
             <span class="pp-dot"></span>
-            <div><strong>No account required</strong><p>Everything works without signing in. Google sign-in is optional.</p></div>
+            <div><strong>No account, no sign-in</strong><p>Muvik has no user accounts. Everything works without signing in to anything.</p></div>
           </div>
           <div class="pp-point">
             <span class="pp-dot"></span>
@@ -52,16 +55,15 @@
         <h2>Access to Your Audio Files</h2>
         <p>To find and play your music, Muvik asks Android for access to audio files on your device (<em>Music and audio</em> permission on Android 13 and newer, or <em>Storage</em> on older versions), and, if you choose, access to a specific folder that you pick with the Android folder picker. Muvik uses this access only to list, play, and read the tags, cover art, and embedded lyrics of your audio files. Audio files are never uploaded, and Muvik does not modify or delete them.</p>
 
-        <h2>Optional Google Sign-In</h2>
-        <p>You may optionally sign in with your Google account from Settings. If you do, Muvik receives your Google account name, email address, and profile picture from Google and shows them in the app's account card. This information is used only to display your account inside the app and is not sent to our servers or shared with anyone. Signing out removes it from the app. Muvik's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
-
         <h2>Third-Party Services</h2>
         <p>Muvik uses third-party services that may automatically collect certain device, application, diagnostic, or usage information:</p>
         <div class="pp-card">
           <ul>
-            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a> (including Google Sign-In and Play In-App Review)</li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a> (including Play In-App Review and Play Integrity)</li>
             <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Crashlytics</a> — crash and diagnostic reports so we can fix bugs</li>
-            <li><a href="https://firebase.google.com/policies/analytics/" target="_blank" rel="noopener">Firebase Analytics</a> — aggregated app usage and device information used to understand and improve the app</li>
+            <li><a href="https://firebase.google.com/policies/analytics/" target="_blank" rel="noopener">Firebase Analytics</a> — aggregated app usage (for example which screens are opened) and device information used to understand and improve the app</li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Remote Config</a> — downloads app configuration values from our Firebase project when the app starts</li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase App Check</a> (with Play Integrity) — checks that requests to our Firebase project come from the genuine Muvik app on a genuine device</li>
             <li>Google Mobile Ads SDK and User Messaging Platform — included in the app; Muvik does not display ads</li>
           </ul>
           <h3>These services may process information such as:</h3>
@@ -69,6 +71,7 @@
             <li>Device identifiers, such as an app instance ID and, where applicable, the advertising identifier</li>
             <li>Device model, operating system version, language, and approximate region</li>
             <li>Application version and configuration</li>
+            <li>A device and app integrity result from Google Play Integrity, used only to verify that the app is genuine</li>
             <li>Crash logs, stack traces, and diagnostic information</li>
             <li>General app usage events</li>
             <li>IP address, used by these services to deliver their functionality and to estimate a general region</li>
@@ -77,7 +80,7 @@
         <p>These providers process information under their own privacy policies. We do not send the names of your songs, the content of your library, your playlists, or your listening history to these services.</p>
 
         <h2>Feedback</h2>
-        <p>The feedback form in Muvik opens your own email app with a message addressed to us. The text you write, the category you choose, and the reply email address you optionally enter are sent only if and when you press send in your email app, and are used only to respond to you. Muvik itself does not send the feedback over the internet.</p>
+        <p>The feedback form in Muvik opens your own email app with a message addressed to us. The text you write, the category you choose, the reply email address you optionally enter, and your Muvik version and Android version (added at the end of the message so we can reproduce a problem) are sent only if and when you press send in your email app, and are used only to respond to you. Muvik itself does not send the feedback over the internet.</p>
 
         <h2>Notifications</h2>
         <p>Muvik shows a playback notification with media controls while music plays. Muvik may also show a persistent reminder notification that opens the app, and an optional daily reminder to listen to music. These notifications are generated on your device. You can turn the reminders off in Muvik's Settings, and you can disable notifications at any time in Android system settings.</p>
@@ -91,7 +94,7 @@
           <li><strong>Foreground service (special use)</strong> — to keep the persistent reminder notification visible</li>
           <li><strong>Run at startup</strong> — to restore reminders after the device restarts</li>
           <li><strong>Wake lock</strong> — to keep playback running while the screen is off</li>
-          <li><strong>Internet / network state</strong> — used by Google sign-in, Firebase crash reporting, and analytics; music playback itself does not need the internet</li>
+          <li><strong>Internet / network state</strong> — used by Firebase crash reporting, analytics, remote configuration, and app verification; music playback itself does not need the internet</li>
         </ul>
         <p>The app requests permissions only when required for the corresponding user-facing functionality. You can review or revoke them at any time in Android Settings → Apps → Muvik → Permissions.</p>
 
@@ -109,7 +112,6 @@
         <h2>How to Delete Your Data</h2>
         <ul>
           <li><strong>Delete all Muvik data:</strong> Android Settings → Apps → Muvik → Storage → Clear storage / Clear data, or uninstall the app. This cannot be undone. Your audio files themselves are never deleted by this.</li>
-          <li><strong>Remove your Google account from Muvik:</strong> sign out in Muvik's Settings, or remove Muvik's access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
           <li><strong>Reset your advertising identifier or opt out of ads personalization:</strong> Android Settings → Google → Ads.</li>
           <li><strong>Questions or requests about data processed by our service providers:</strong> contact us at <a href="mailto:contact.support@asctechsoft.com">contact.support@asctechsoft.com</a>.</li>
         </ul>
@@ -150,6 +152,14 @@
   color: #fff;
 }
 .pp-container { max-width: 820px; margin: 0 auto; }
+.pp-hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.pp-logo {
+  flex-shrink: 0;
+  width: 128px;
+  height: 128px;
+  border-radius: 30px;
+  box-shadow: 0 18px 40px rgba(20, 10, 70, 0.35);
+}
 .pp-eyebrow {
   display: inline-block;
   background: rgba(255,255,255,0.15);
@@ -220,6 +230,7 @@
 .pp-point strong { display: block; font-size: 1.1rem; color: #1a1538; margin-bottom: 4px; }
 .pp-point p { font-size: 1.1rem; margin: 0; line-height: 1.6; }
 @media (max-width: 640px) {
+  .pp-logo { width: 72px; height: 72px; border-radius: 18px; }
   .pp-content { padding: 28px 20px; }
   .pp-grid { grid-template-columns: 1fr; }
 }
