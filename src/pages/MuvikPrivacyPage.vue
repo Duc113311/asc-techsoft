@@ -5,7 +5,7 @@
         <div class="pp-hero-text">
           <span class="pp-eyebrow">Legal</span>
           <h1>Privacy Policy<br /><span>Muvik</span></h1>
-          <p class="pp-updated">Last updated: October 26, 2026</p>
+          <p class="pp-updated">Last updated: October 27, 2026</p>
         </div>
         <img class="pp-logo" src="/privacy/muvik-logo.webp" alt="Muvik app icon" width="128" height="128" />
       </div>
@@ -47,6 +47,7 @@
             <li>Playlists you create, favorites, and the current play queue and playback position</li>
             <li>Listening statistics (for example play counts and listening time) shown in the app</li>
             <li>Search history inside the app</li>
+            <li>Ringtone clips you create with the ringtone maker, saved as audio files in your device's Ringtones, Notifications, or Alarms folder</li>
             <li>Settings: theme, accent color, language, playback quality, equalizer and audio effects, headphone behavior, sleep timer, and notification preferences</li>
           </ul>
         </div>
@@ -54,6 +55,9 @@
 
         <h2>Access to Your Audio Files</h2>
         <p>To find and play your music, Muvik asks Android for access to audio files on your device (<em>Music and audio</em> permission on Android 13 and newer, or <em>Storage</em> on older versions), and, if you choose, access to a specific folder that you pick with the Android folder picker. Muvik uses this access only to list, play, and read the tags, cover art, and embedded lyrics of your audio files. Audio files are never uploaded, and Muvik does not modify or delete them.</p>
+
+        <h2>Ringtone Maker</h2>
+        <p>Muvik can cut a short clip from a song you choose and save it as a new audio file in your device's Ringtones, Notifications, or Alarms folder, and, only when you ask, set it as your phone's ringtone, notification sound, or alarm sound. The clip is created and stored entirely on your device. It is never uploaded, and the original song is not changed. To set a sound as your default, Android requires the <em>Modify system settings</em> permission, which Muvik requests only when you use this feature, and uses only to set the sound you picked. You can delete the saved clips with any file manager and revoke the permission at any time in Android settings.</p>
 
         <h2>Third-Party Services</h2>
         <p>Muvik uses third-party services that may automatically collect certain device, application, diagnostic, or usage information:</p>
@@ -89,6 +93,8 @@
         <p>Depending on the features you use and your Android version, Muvik may request or use the following permissions:</p>
         <ul>
           <li><strong>Music and audio / Storage</strong> — to find and play audio files on your device</li>
+          <li><strong>Modify system settings</strong> — only when you choose to set a clip as your ringtone, notification sound, or alarm sound</li>
+          <li><strong>Write storage (Android 9 and older)</strong> — to save the clip you created in the Ringtones, Notifications, or Alarms folder</li>
           <li><strong>Notifications</strong> — to show the playback controls and optional reminders</li>
           <li><strong>Foreground service (media playback)</strong> — to keep music playing when the app is in the background or the screen is off</li>
           <li><strong>Foreground service (special use)</strong> — to keep the persistent reminder notification visible</li>
