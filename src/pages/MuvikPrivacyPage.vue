@@ -72,7 +72,7 @@
           </ul>
           <h3>These services may process information such as:</h3>
           <ul>
-            <li>Device identifiers, such as an app instance ID and, where applicable, the advertising identifier</li>
+            <li>Device identifiers, such as an app instance ID (Muvik does not use the advertising identifier)</li>
             <li>Device model, operating system version, language, and approximate region</li>
             <li>Application version and configuration</li>
             <li>A device and app integrity result from Google Play Integrity, used only to verify that the app is genuine</li>
