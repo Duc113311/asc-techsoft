@@ -1,7 +1,6 @@
 <script setup>
 import { computed, ref, watch, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
-import AppLink from './AppLink.vue'
 import PlatformIcon from './PlatformIcon.vue'
 
 const props = defineProps({
@@ -136,14 +135,14 @@ onUnmounted(() => {
               <li>
                 <span class="app-modal-legal-left">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" /><path d="M9 12h6M9 16h6" stroke-linecap="round" /></svg>
-                  <AppLink to="/terms">Terms of Service</AppLink>
+                  <RouterLink :to="details.terms">Terms of Service</RouterLink>
                 </span>
                 <svg class="app-modal-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg>
               </li>
               <li>
                 <span class="app-modal-legal-left">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7" stroke-linecap="round" /><circle cx="12" cy="17" r=".6" fill="currentColor" /></svg>
-                  <AppLink to="/contact">Support</AppLink>
+                  <RouterLink :to="details.support">Support</RouterLink>
                 </span>
                 <svg class="app-modal-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg>
               </li>
