@@ -11,7 +11,7 @@ const siteData = useSiteContent()
 </script>
 
 <template>
-  <div v-if="siteData">
+  <div v-if="siteData" class="home-page">
     <HeroSection :hero="siteData.hero" :brand="siteData.brand" />
     <ServicesSection :services="siteData.services" />
     <TrustedByBar />

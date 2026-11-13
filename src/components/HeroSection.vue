@@ -1,5 +1,5 @@
 <script setup>
-import { img2Url } from '../assets'
+import { imgAboutUrl } from '../assets'
 import AppLink from './AppLink.vue'
 import { useI18n } from '../i18n'
 
@@ -33,15 +33,7 @@ const { currentLocale } = useI18n()
 
       <div v-reveal="200" class="hero-visual">
         <div class="hero-globe-wrap">
-          <img class="hero-globe" :src="img2Url" alt="Digital platform globe" fetchpriority="high" decoding="async" />
-          <div class="hero-badge hero-badge-marketing">
-            <strong>MARKETING</strong>
-            <span class="badge-platforms">&#9835; &nbsp; &infin; &nbsp; &#65;</span>
-          </div>
-          <div class="hero-badge hero-badge-growth">
-            <strong>GROWTH</strong>
-            <span class="growth-bar"></span>
-          </div>
+          <img class="hero-globe" :src="imgAboutUrl" alt="ASC TechSoft office" fetchpriority="high" decoding="async" />
         </div>
       </div>
     </div>

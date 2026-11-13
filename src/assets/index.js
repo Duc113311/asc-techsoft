@@ -11,5 +11,11 @@ import imgSlideProductUrl from './images/img_slide_product.png'
 import imgAboutUrl from './images/img_about.png'
 import imgContactUrl from './images/img_contact.png'
 import imgBgContactUrl from './images/img_bg_contact.png'
+import imgThree1Url from './images/img_three_1.png'
+import imgThree2Url from './images/img_three_2.png'
+import imgThree3Url from './images/img_three_3.png'
+import imgReal1Url from './images/img_real_1.png'
+import imgReal2Url from './images/img_real_2.png'
+import imgReal3Url from './images/img_real_3.png'
 
-export { feedbackImageUrl, logoUrl, sliderImageUrl, bgSlideUrl, bgFooterUrl, img1Url, img2Url, img3Url, img4Url, imgSlideProductUrl, imgAboutUrl, imgContactUrl, imgBgContactUrl }
+export { feedbackImageUrl, logoUrl, sliderImageUrl, bgSlideUrl, bgFooterUrl, img1Url, img2Url, img3Url, img4Url, imgSlideProductUrl, imgAboutUrl, imgContactUrl, imgBgContactUrl, imgThree1Url, imgThree2Url, imgThree3Url, imgReal1Url, imgReal2Url, imgReal3Url }

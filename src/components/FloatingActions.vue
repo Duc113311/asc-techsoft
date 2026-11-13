@@ -1,5 +1,5 @@
 <script setup>
-import { ref, nextTick, computed } from 'vue'
+import { ref, nextTick, computed, onMounted, onUnmounted } from 'vue'
 import { useSiteContent } from '../shared/site-content'
 import { useI18n } from '../i18n'
 
@@ -87,10 +87,33 @@ function onKeydown(e) {
 
 const zaloPhone = computed(() => siteData.value?.footer?.contact?.phone ?? '0384367193')
 const zaloUrl = computed(() => `https://zalo.me/${zaloPhone.value.replace(/\s/g, '')}`)
+
+// back-to-top: shown once the page is scrolled down
+const showTop = ref(false)
+function onScroll() { showTop.value = window.scrollY > 300 }
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }) }
+onMounted(() => {
+  onScroll()
+  window.addEventListener('scroll', onScroll, { passive: true })
+})
+onUnmounted(() => window.removeEventListener('scroll', onScroll))
 </script>
 
 <template>
   <div class="floating-actions">
+    <!-- Back to top -->
+    <button
+      v-if="showTop"
+      class="fab fab-top"
+      type="button"
+      aria-label="Back to top"
+      @click="scrollToTop"
+    >
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5.5 11.5L12 5l6.5 6.5" />
+      </svg>
+    </button>
+
     <!-- Zalo -->
     <a class="fab fab-zalo" :href="zaloUrl" target="_blank" rel="noopener" aria-label="Chat Zalo">
       <svg viewBox="0 0 48 48" width="26" height="26" xmlns="http://www.w3.org/2000/svg">

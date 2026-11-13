@@ -1,12 +1,12 @@
 <script setup>
 import AppLink from './AppLink.vue'
-import { img1Url, img3Url, img4Url } from '../assets'
+import { imgThree1Url, imgThree2Url, imgThree3Url } from '../assets'
 import { useI18n } from '../i18n'
 
 defineProps({ services: { type: Array, required: true } })
 const { currentLocale } = useI18n()
 
-const pillarImgs = [img1Url, img3Url, img4Url]
+const pillarImgs = [imgThree1Url, imgThree2Url, imgThree3Url]
 </script>
 
 <template>

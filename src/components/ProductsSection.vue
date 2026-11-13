@@ -1,6 +1,6 @@
 <script setup>
 import AppLink from './AppLink.vue'
-import { img1Url, img3Url, img4Url } from '../assets'
+import { imgReal1Url, imgReal2Url, imgReal3Url } from '../assets'
 import { useSiteContent } from '../shared/site-content'
 import { useI18n } from '../i18n'
 
@@ -8,7 +8,7 @@ defineProps({ products: { type: Array, required: true } })
 const siteData = useSiteContent()
 const { currentLocale } = useI18n()
 
-const projectImgs = [img1Url, img3Url, img4Url]
+const projectImgs = [imgReal1Url, imgReal2Url, imgReal3Url]
 const projectTags = [
   ['Flutter', 'Node.js', 'AWS'],
   ['Next.js', 'PostgreSQL', 'Docker'],

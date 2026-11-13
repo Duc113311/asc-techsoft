@@ -1,5 +1,6 @@
 <script setup>
 import AppLink from '../components/AppLink.vue'
+import ContactForm from '../components/ContactForm.vue'
 import { imgAboutUrl, bgFooterUrl, sliderImageUrl } from '../assets'
 import { useSiteContent } from '../shared/site-content'
 import { useI18n } from '../i18n'
@@ -104,6 +105,9 @@ const { currentLocale } = useI18n()
               <AppLink class="btn-green" to="/contact">{{ currentLocale.ui.ctaBrightCta1 }} &rarr;</AppLink>
               <AppLink class="btn-ghost" to="/contact">{{ currentLocale.ui.ctaBrightCta2 }}</AppLink>
             </div>
+          </div>
+          <div v-reveal="120" class="about-cta-form">
+            <ContactForm card />
           </div>
         </div>
       </section>
